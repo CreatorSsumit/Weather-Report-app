@@ -53,7 +53,7 @@ var climatedata = '';
   return(
    
     
-    <Homepage itmdata = {itm} climatevalue={climate} climatedatavalue={climatedata} currentclimate={citydetails.citycurrentdetails} />
+    <Homepage key={itm.citydetails.city.id} itmdata = {itm} climatevalue={climate} climatedatavalue={climatedata} currentclimate={citydetails.citycurrentdetails} />
    
    )
      
@@ -95,7 +95,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-
+    flex: 1,
     flexDirection:"column"
   },
 });
